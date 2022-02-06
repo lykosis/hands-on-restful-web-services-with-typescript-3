@@ -1,0 +1,15 @@
+{
+    "testRunner": "mocha",
+    "coverageAnalysis": "perTest",
+    "tsconfigFile": "tsconfig.json",
+    "mutate": ["src/**/*.ts"],    
+    "mochaOptions": {
+      "spec": [ "test/**/*.spec.ts" ],
+      "package": "./package.json",
+      "opts": "./test/mocha.opts",
+      "ui": "bdd",
+      "require": [ "ts-node/register", "source-map-support/register" ],
+      "async-only": false,
+      "grep": ".*"
+    }
+}
